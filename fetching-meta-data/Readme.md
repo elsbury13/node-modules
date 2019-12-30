@@ -3,6 +3,7 @@
 ## Shows all files, directories & subdirectories 
 
 `node meta.js`
+
 `node meta.js my-folder`
 
 ## Checks if file exists 
