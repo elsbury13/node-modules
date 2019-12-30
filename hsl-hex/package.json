@@ -1,11 +1,29 @@
 {
-  "name": "hsl-hex",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@elsbury13/hsl-to-hex",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm ls && npm test",
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "@elsbury13/hsl-to-hex",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elsbury13/node-modules/tree/master/hsl-hex"
+  },
+  "dependencies": {
+    "cute-stack": "^1.4.3",
+    "debug": "^4.1.1",
+    "hsl-to-rgb-for-reals": "^1.1.1",
+    "tap": "^14.10.5"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": "Convert HSL colors to RGB colors in hex format."
 }
