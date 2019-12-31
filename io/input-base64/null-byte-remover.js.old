@@ -1,0 +1,20 @@
+// queue a function every 10ms that write . to stdout
+// unref() prevents the timer from keepijng the process alive
+setInterval(() => process.stdout.write("."), 10).unref()
+
+// Core modules
+const fs = require('fs')
+const path = require('path')
+// current working dir
+const cwd = process.cwd()
+// path.join normalizes paths across platforms
+// fs.readFileSync synchronously read entire file into process memory
+const bytes = fs.readFileSync(path.join(cwd, 'file.dat'))
+// Remove null bytes and save
+const clean = bytes.filter(n => n)
+fs.writeFileSync(path.join(cwd, 'clean.dat', clean)
+// Append to log
+fs.appendFileSync(
+  path.join(cwd, 'log.txt'),
+  (new Date) + ' ' + (bytes.length - clean.length) + ' bytes removed\n'
+)
