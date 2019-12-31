@@ -2,4 +2,5 @@
 
 ## 2 different ways
 `node index.js`
+
 `node core.js`
