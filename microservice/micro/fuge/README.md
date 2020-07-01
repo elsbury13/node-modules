@@ -22,6 +22,9 @@
 `ps aux | grep -i node`
 `netstat -an | grep -i listen`
 
+### environment variables
+`info adderservice full`
+
 ## View
 `http://localhost:3000/add`
 

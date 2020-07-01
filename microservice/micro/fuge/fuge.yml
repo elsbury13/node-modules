@@ -8,7 +8,7 @@ fuge_global:
 adderservice:
   type: process
   path: ../../adderservice
-  run: 'node service.js'
+  run: 'node index.js'
   ports:
     - main=8080
 webapp:

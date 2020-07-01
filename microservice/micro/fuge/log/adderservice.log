@@ -1,3 +1,1 @@
-Debugger listening on ws://127.0.0.1:9229/054c0fd5-ff88-4aff-9cc4-90b1d7891dab
-For help, see: https://nodejs.org/en/docs/inspector
-restify listening at http://[::]:8080
+restify listening at http://0.0.0.0:8080
